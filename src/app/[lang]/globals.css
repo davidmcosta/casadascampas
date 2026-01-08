@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --amber: 42, 29%, 56%;
+  --amberopacity: 42 29% 56% / 0.7;
+--amberopacity: 30 5% 15% / 0.7;
+  --amber-hover:  42, 29%, 66%;
+  --black-clr: 30, 5%, 15%;
+  --black-dark: 30, 6%, 14%;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
+    /* Keep your existing color variables */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    /* Keep your existing dark mode variables */
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+    font-feature-settings: 'kern';
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+ 
+
+  /* Custom background colors */
+  .bg-amberVar {
+    background-color: hsl(var(--amber));
+  }
+  .bg-amberVar {
+    background-color: hsl(var(--amberopacity));
+  }
+
+  .bg-amberVar:hover {
+    background-color: hsl(var(--amber-hover));
+  }
+}
