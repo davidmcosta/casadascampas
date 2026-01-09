@@ -1,4 +1,4 @@
-export default {
+const chooseUs = {
   section: {
     title: "Por Que Somos Referência",
     image: {
@@ -27,3 +27,5 @@ export default {
     ]
   }
 };
+
+export default chooseUs

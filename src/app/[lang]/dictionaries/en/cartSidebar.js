@@ -1,4 +1,4 @@
-export default {
+const cartSidebar = {
   cartTitle: "Shopping Cart",
   emptyCartMessage: "Your cart is empty",
   productIdLabel: "ID",
@@ -28,3 +28,5 @@ export default {
   confirmationNote: "Please confirm this order at your earliest convenience. Thank you!",
   noLocationNote: "Please share your delivery address when confirming this order. Thank you!",
 };
+
+export default cartSidebar

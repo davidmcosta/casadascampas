@@ -1,4 +1,4 @@
-export default {
+const blogPage = {
   blog: {
     metadata: {
       title: "Blogue - Arte Funerária e Monumentos | Casadas Campus",
@@ -53,7 +53,7 @@ export default {
           author: 'João Silva',
           category: 'Arte',
           tags: ['escultura', 'mármore', 'tradição', 'arte funerária'],
-          image: 'images/imagewhite.jpg',
+          image: 'images/articles/art.jpg',
           views: 1245,
           featured: true
         },
@@ -98,7 +98,7 @@ export default {
           author: 'Isabel Fernandes',
           category: 'Personalização',
           tags: ['personalização', 'lápides', 'memória', 'porcelana'],
-          image: 'images/img11.png',
+          image: 'images/articles/memory.jpg',
           views: 1087,
           featured: true
         },
@@ -128,7 +128,7 @@ export default {
           author: 'Ana Costa',
           category: 'Design',
           tags: ['design moderno', 'tendências', 'inovação', 'minimalismo'],
-          image: 'images/img13.jpg',
+          image: 'images/articles/modern.jpg',
           views: 923,
           featured: true
         }
@@ -187,3 +187,5 @@ export default {
     }
   }
 };
+
+export default blogPage

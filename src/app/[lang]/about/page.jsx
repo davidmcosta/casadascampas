@@ -148,7 +148,7 @@ export default function AboutPage() {
             <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
               <div className="text-center mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-blackVar">
-                  {whyChooseUsTitle || 'Why Choose Us'}
+                  {whyChooseUsTitle || 'Entregamos'}
                 </h2>
                 <div className="w-16 h-1 bg-amberVar mx-auto mt-4" />
               </div>
@@ -178,7 +178,7 @@ export default function AboutPage() {
             <div className="container mx-auto max-w-6xl px-4 sm:px-6">
               <div className="text-center mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-blackVar">
-                  {teamTitle || 'Meet Our Team'}
+                  {teamTitle || 'Conheça a nossa equipa'}
                 </h2>
                 <div className="w-16 h-1 bg-amberVar mx-auto mt-4" />
               </div>

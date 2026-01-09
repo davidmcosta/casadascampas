@@ -87,7 +87,6 @@ function FeaturedProduct() {
                 key={product.id}
                 className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group"
               >
-                console.log(product.id +", " + product.name)
                 {/* Product Image */}
                 <div className="relative h-56 overflow-hidden">
                   <Image
@@ -100,7 +99,6 @@ function FeaturedProduct() {
                     style={{ objectFit: "cover" }}
                     className="transition-transform duration-500 group-hover:scale-105"
                   />
-                  console.log(""-+product.image);
                   <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300" />
                 </div>
 

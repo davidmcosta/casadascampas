@@ -1,4 +1,4 @@
-export default {
+const testimonials = {
   title: "Families Who Trusted Us",
   description:
     "Delicate moments require special care. See what our clients say about our work.",
@@ -23,3 +23,5 @@ export default {
     }
   ]
 };
+
+export default testimonials

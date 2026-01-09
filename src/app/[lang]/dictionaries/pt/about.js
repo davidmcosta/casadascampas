@@ -60,26 +60,33 @@ Hoje, continuamos a honrar os nossos princípios fundadores, adaptando-nos às n
 
   teamMembers: [
     {
-      name: "Sarah Johnson",
-      position: "Fundadora e CEO",
-      bio: "Com mais de 30 anos no setor funerário, Sarah lidera a nossa equipa com compaixão e uma profunda dedicação ao serviço às famílias.",
-      image: "/images/profile1.png",
-      alt: "Sarah Johnson, Fundadora e CEO",
-    },
-    {
-      name: "Michael Chen",
-      position: "Diretor de Operações",
-      bio: "Michael supervisiona as nossas operações diárias, garantindo que cada família receba o mais alto nível de serviço e atenção aos detalhes.",
-      image: "/images/profile.jpg",
-      alt: "Michael Chen, Diretor de Operações",
-    },
-    {
-      name: "Emily Rodriguez",
-      position: "Coordenadora de Serviços às Famílias",
-      bio: "Emily trabalha diretamente com as famílias para garantir que as suas necessidades sejam atendidas com cuidado, compreensão e profissionalismo.",
-      image: "/images/profile3.jpg",
-      alt: "Emily Rodriguez, Coordenadora de Serviços às Famílias",
-    },
+    name: "Jorge Franco",
+    position: "Fundador e CEO",
+    bio: "Com mais de 30 anos no setor funerário, Jorge lidera a empresa com dedicação, garantindo excelência em todos os serviços prestados às famílias.",
+    image: "/images/team/jorge.jpeg",
+    alt: "Jorge Franco, Fundador e CEO",
+  },
+  {
+    name: "Abilio Marcos",
+    position: "Encarregado Geral",
+    bio: "Abilio coordena as operações diárias da empresa, assegurando que cada processo e serviço seja realizado com precisão e profissionalismo.",
+    image: "/images/team/abilio.jpg",
+    alt: "Abilio Marcos, Encarregado Geral",
+  },
+  {
+    name: "Daniel Oliveira",
+    position: "Encarregado de Dep. Montagens",
+    bio: "Daniel supervisiona a equipa de montagens, garantindo que cada produto seja instalado com cuidado, segurança e atenção aos detalhes.",
+    image: "/images/team/daniel.jpeg",
+    alt: "Daniel Oliveira, Encarregado de Dep. Montagens",
+  },
+  {
+    name: "David Costa",
+    position: "Encarregado de Dep. Gráfico",
+    bio: "David lidera a equipa gráfica, produzindo designs e materiais com criatividade, precisão e fidelidade aos padrões da empresa.",
+    image: "/images/team/david.jpeg",
+    alt: "David Costa, Encarregado de Dep. Gráfico",
+  },
   ],
 
   ctaTitle: "Estamos Aqui para Ajudar",

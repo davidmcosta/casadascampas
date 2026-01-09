@@ -1,4 +1,4 @@
-export default {
+const gallery = {
   "gallery": {
     "heroTitle": "Galeria Memorial",
     "heroDescription": "Descubra nossa coleção selecionada de peças memoriais premium, elaboradas com reverência e projetadas para homenagear memórias queridas.",
@@ -26,3 +26,5 @@ export default {
     "reviews": "avaliações"
   }
 };
+
+export default gallery

@@ -1,4 +1,4 @@
-export default {
+const aboutPage = {
   title: "Honor the Memory with",
   highlight: "Dignity",
   description:
@@ -12,3 +12,5 @@ export default {
   imageAlt:
     "Professional funeral monument workshop - Casa das Campas atelier showcasing handcrafted memorial stones and sculptures"
 };
+
+export default aboutPage

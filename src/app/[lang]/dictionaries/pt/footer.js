@@ -1,4 +1,4 @@
-export default {
+const footer = {
   description:
     "Especializados em produtos funerários de alta qualidade, oferecendo um serviço respeitoso e compassivo durante momentos difíceis.",
 
@@ -30,3 +30,5 @@ export default {
   privacy: "Política de Privacidade",
   terms: "Termos e Condições"
 };
+
+export default footer

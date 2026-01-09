@@ -55,7 +55,7 @@ const BlogPage = () => {
       author: t?.blog?.articles?.details?.author,
       category: 'Art',
       tags: ['escultura', 'mármore', 'tradição', 'arte funerária'],
-      image: 'images/imagewhite.jpg',
+      image: 'images/articles/art.jpg',
       views: 1245,
       featured: true
     },
@@ -100,7 +100,7 @@ const BlogPage = () => {
       author: t?.blog?.articles?.details?.author,
       category: 'Personalization',
       tags: ['personalização', 'lápides', 'memória', 'porcelana'],
-      image: 'images/img11.png',
+      image: 'images/articles/memory.jpg',
       views: 1087,
       featured: true
     },
@@ -130,7 +130,7 @@ const BlogPage = () => {
       author: t?.blog?.articles?.details?.author,
       category: 'Design',
       tags: ['design moderno', 'tendências', 'inovação', 'minimalismo'],
-      image: 'images/img13.jpg',
+      image: 'images/articles/modern.jpg',
       views: 923,
       featured: true
     }

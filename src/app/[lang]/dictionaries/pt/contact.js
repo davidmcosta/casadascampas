@@ -1,4 +1,4 @@
-export default {
+const contact = {
   hero: {
     heading: "Contate <span>nos</span>",
     subheading: "Estamos aqui para fornecer suporte e orientação profissional."
@@ -55,3 +55,6 @@ export default {
     mapButton: "Obter Direções"
   }
 }
+
+
+export default contact

@@ -1,4 +1,4 @@
-export default {
+const blog = {
   heroTitle: "Nosso Blog",
   heroExcerpt: "Explore nossos artigos cuidadosos, guias e histórias para apoiá-lo em cada etapa da sua jornada memorial.",
   categories: ["Todos", "Orientação Memorial", "Planejamento de Sepultamento", "Apoio ao Luto", "Planejamento de Funeral"],
@@ -13,3 +13,5 @@ export default {
   placeholderEmail: "Digite seu e-mail",
   subscribeButton: "Assinar"
 };
+
+export default blog

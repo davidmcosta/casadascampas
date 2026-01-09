@@ -1,4 +1,4 @@
-export default {
+const blogPage = {
   blog: {
     metadata: {
       title: "Blog - Funeral Art and Monuments | Casadas Campus",
@@ -53,7 +53,7 @@ export default {
           author: "João Silva",
           category: "Art",
           tags: ["sculpture", "marble", "tradition", "funeral art"],
-          image: "images/imagewhite.jpg",
+          image: "images/articles/art.jpg",
           views: 1245,
           featured: true
         },
@@ -98,7 +98,7 @@ export default {
           author: "Isabel Fernandes",
           category: "Personalization",
           tags: ["personalization", "headstones", "memory", "porcelain"],
-          image: "images/img11.png",
+          image: "images/articles/memory.jpg",
           views: 1087,
           featured: true
         },
@@ -128,7 +128,7 @@ export default {
           author: "Ana Costa",
           category: "Design",
           tags: ["modern design", "trends", "innovation", "minimalism"],
-          image: "images/img13.jpg",
+          image: "images/articles/modern.jpg",
           views: 923,
           featured: true
         }
@@ -187,3 +187,5 @@ export default {
     }
   }
 };
+
+export default blogPage

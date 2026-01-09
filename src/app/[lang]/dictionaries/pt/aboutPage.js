@@ -1,4 +1,4 @@
-export default {
+const aboutPage = {
   title: "Homenageie a Memória com",
   highlight: "Dignidade",
   description:
@@ -12,3 +12,5 @@ export default {
   imageAlt:
     "Atelier profissional de monumentos fúnebres - Casa das Campas a exibir pedras memoriais e esculturas artesanais"
 };
+
+export default aboutPage

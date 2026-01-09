@@ -59,28 +59,35 @@ Today, we continue to honor our founding principles while adapting to meet the e
   ],
 
   teamMembers: [
-    {
-      name: "Sarah Johnson",
-      position: "Founder & CEO",
-      bio: "With over 30 years in the funeral industry, Sarah leads our team with compassion and a deep dedication to serving families.",
-      image: "/images/profile1.png",
-      alt: "Sarah Johnson, Founder and CEO",
-    },
-    {
-      name: "Michael Chen",
-      position: "Director of Operations",
-      bio: "Michael oversees our day-to-day operations, ensuring every family receives the highest level of service and attention to detail.",
-      image: "/images/profile.jpg",
-      alt: "Michael Chen, Director of Operations",
-    },
-    {
-      name: "Emily Rodriguez",
-      position: "Family Services Coordinator",
-      bio: "Emily works closely with families to ensure their needs are met with care, understanding, and professionalism.",
-      image: "/images/profile3.jpg",
-      alt: "Emily Rodriguez, Family Services Coordinator",
-    },
-  ],
+  {
+    name: "Jorge Franco",
+    position: "Founder & CEO",
+    bio: "With over 30 years in the funeral industry, Jorge leads the company with dedication, ensuring excellence in all services provided to families.",
+    image: "/images/team/jorge.jpeg",
+    alt: "Jorge Franco, Founder & CEO",
+  },
+  {
+    name: "Abilio Marcos",
+    position: "General Manager",
+    bio: "Abilio coordinates the company's daily operations, ensuring that every process and service is carried out with precision and professionalism.",
+    image: "/images/team/abilio.jpg",
+    alt: "Abilio Marcos, General Manager",
+  },
+  {
+    name: "Daniel Oliveira",
+    position: "Head of Assembly Department",
+    bio: "Daniel supervises the assembly team, ensuring that every product is installed with care, safety, and attention to detail.",
+    image: "/images/team/daniel.jpeg",
+    alt: "Daniel Oliveira, Head of Assembly Department",
+  },
+  {
+  name: "David Costa",
+  position: "Head of Graphic Department",
+  bio: "David leads the graphic team, producing designs and materials with creativity, precision, and fidelity to the company's standards.",
+  image: "/images/team/david.jpeg",
+  alt: "David Costa, Head of Graphic Department",
+},
+],
 
   ctaTitle: "We're Here to Help",
   ctaText:

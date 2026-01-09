@@ -1,4 +1,4 @@
-export default {
+const featured = {
     featuredProduct0: {
     title: "Nossa Especialidade",
     description:
@@ -44,3 +44,5 @@ export default {
     ]
   }
 };
+
+export default featured
