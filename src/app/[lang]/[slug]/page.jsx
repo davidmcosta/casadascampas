@@ -186,7 +186,7 @@ const BlogDetailPost = () => {
     return <BlogDetailSkeleton />;
   }
 
-  if (!post) {
+  if (!posts) {
     return (
       <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 p-4 sm:p-6 lg:p-8">
         <div className="w-full max-w-md mx-auto px-6 py-12 bg-white rounded-xl shadow-sm">
@@ -334,11 +334,16 @@ const BlogDetailPost = () => {
                   </span>
                 </div>
               )}
+              
               <div className="flex items-center gap-2">
                 <Calendar className="w-5 h-5 text-gray-500" />
+                {post?.publishedAt ? (
                 <time suppressHydrationWarning>
                   {format(new Date(post.publishedAt), "MMMM dd, yyyy")}
                 </time>
+                ) : (
+                  <span>Data indisponível</span>
+                )}
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-5 h-5 text-gray-500" />

@@ -83,11 +83,19 @@ export const useStore = create(
       },
       clearCart: () => set({ cart: [] }),
       toggleCart: () => set({ isCartOpen: !get().isCartOpen }),
+     getBasePrice: () => {
+  return get().cart.reduce((total, item) => {
+    const basePrice = Number(item.price) || 0;
+    return total + basePrice * (item.quantity || 1);
+  }, 0);
+},
      getTotalPrice: () => {
   return get().cart.reduce((total, item) => {
     const basePrice = Number(item.price) || 0;
-    const vat = Number(item.vatRate) || 0; // agar vatRate ho to use karo
-    return total + (basePrice + vat) * (item.quantity || 1);
+    const vatRate = Number(item.vatRate) || 0;
+    const quantity = item.quantity || 1;
+    const itemTotal = basePrice * (1 + vatRate / 100) * quantity;
+    return total + itemTotal;
   }, 0);
 },
 

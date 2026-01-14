@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
+import { usePathname, notFound } from 'next/navigation';
 import { getDictionary } from '../dictionaries';
 
 export default function AboutPage() {
@@ -16,6 +16,10 @@ export default function AboutPage() {
       setLoading(true);
       try {
         const dict = await getDictionary(lang, "about");
+        if (!dict || Object.keys(dict).length === 0) {
+          notFound(); // redireciona para a 404 nativa do Next.js
+          return;
+        }
         setT(dict || {});
       } catch (error) {
         console.error("Error loading dictionary:", error);

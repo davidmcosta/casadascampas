@@ -2,7 +2,7 @@ const chooseUs = {
   section: {
     title: "Why We Are a Trusted Reference",
     image: {
-      src: "/images/img23.jpg",
+      src: "/images/chooseus/img23.webp",
       alt: "Craftsman working on a marble headstone"
     },
     features: [

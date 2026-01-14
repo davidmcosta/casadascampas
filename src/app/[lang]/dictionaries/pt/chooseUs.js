@@ -2,7 +2,7 @@ const chooseUs = {
   section: {
     title: "Por Que Somos Referência",
     image: {
-      src: "/images/img23.jpg",
+      src: "/images/chooseus/img23.webp",
       alt: "Artesão trabalhando em lápide de mármore"
     },
     features: [

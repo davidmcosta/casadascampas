@@ -1,4 +1,4 @@
-const featured = {
+export default {
     featuredProduct0: {
     title: "Our Specialties",
     description:
@@ -9,7 +9,7 @@ const featured = {
     name: "Classic Granite Headstone",
     category: "gravestones",
     description: "Traditional black granite headstone with polished finish and personalized engraving.",
-    image: "/images/image2.jpg",
+    image: "/images/services/image2.webp",
     features: [
       "Premium weather-resistant granite",
       "High-precision laser engraving",
@@ -22,7 +22,7 @@ const featured = {
     name: "Marble Funeral Vase",
     category: "vases",
     description: "Elegant white Carrara marble vase for floral and grave decoration.",
-    image: "/images/image3.jpg",
+    image: "/images/services/image3.webp",
     features: [
       "Authentic Carrara marble",
       "Timeless classic design",
@@ -35,7 +35,7 @@ const featured = {
     name: "Guardian Angel Sculpture",
     category: "sculptures",
     description: "Majestic marble angel sculpture symbolizing protection and eternal peace.",
-    image: "/images/image4.jpg",
+    image: "/images/services/image4.webp",
     features: [
       "Sculpted by skilled artisans",
       "High-quality marble",
@@ -44,5 +44,3 @@ const featured = {
     ]
   }
 };
-
-export default featured

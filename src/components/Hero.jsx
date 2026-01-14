@@ -2,9 +2,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
-import HeroSkeleton from '../components/Skeleton.jsx'
+import HeroSkeleton from './Skeleton.jsx'
 import { usePathname } from 'next/navigation.js';
-import { getHomeData } from "./lib/getHomeData";
+import { getHomeData } from "./lib/getHomeData.js";
 
 
 const ArrowRightIcon = () => (

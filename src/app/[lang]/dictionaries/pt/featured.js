@@ -1,4 +1,4 @@
-const featured = {
+export default {
     featuredProduct0: {
     title: "Nossa Especialidade",
     description:
@@ -9,7 +9,7 @@ const featured = {
     name: "Lápide Clássica em Granito",
     category: "gravestones",
     description: "Lápide tradicional em granito negro com acabamento polido e gravação personalizada.",
-    image: "/images/image2.jpg",
+    image: "/images/services/image2.webp",
     features: [
       "Granito premium resistente às intempéries",
       "Gravação a laser de alta precisão",
@@ -22,7 +22,7 @@ const featured = {
     name: "Vaso Funerário em Mármore",
     category: "vases",
     description: "Elegante vaso em mármore branco carrara para flores e ornamentação tumular.",
-    image: "/images/image3.jpg",
+    image: "/images/services/image3.webp",
     features: [
       "Mármore Carrara autêntico",
       "Design clássico intemporal",
@@ -35,7 +35,7 @@ const featured = {
     name: "Escultura Anjo da Guarda",
     category: "sculptures",
     description: "Majestosa escultura de anjo em mármore, simbolizando proteção e paz eterna.",
-    image: "/images/image4.jpg",
+    image: "/images/services/image4.webp",
     features: [
       "Esculpida por artesãos especializados",
       "Mármore de alta qualidade",
@@ -44,5 +44,3 @@ const featured = {
     ]
   }
 };
-
-export default featured

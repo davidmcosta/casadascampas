@@ -4,6 +4,7 @@ import "./globals.css";
 import { CartProvider } from "../../contexts/CartContext";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import CartSidebar from "../../components/CartSidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -60,6 +61,7 @@ export default async function RootLayout({
         <CartProvider lang={lang}>
           <div className="flex flex-col min-h-screen">
             <Header />
+            <CartSidebar />
             <main className="flex-grow">{children}</main>
             <Footer />
           </div>
