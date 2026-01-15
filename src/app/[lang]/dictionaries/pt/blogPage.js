@@ -113,7 +113,7 @@ const blogPage = {
           author: 'Carlos Mendes',
           category: 'História',
           tags: ['simbolismo', 'história', 'tradição', 'Portugal'],
-          image: 'images/img12.jpg',
+          image: 'images/blog/img12.jpg',
           views: 756,
           featured: false
         },

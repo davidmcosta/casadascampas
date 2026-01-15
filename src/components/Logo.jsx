@@ -6,7 +6,7 @@ const Logo = () => {
     <div className="flex items-center gap-2">
       <div className="relative w-[180px] h-[80px]">
         <Image
-          src="/images/logo.webp"
+          src="/images/logo/logo.webp"
           alt="Logo da Casa das Campas"
           fill
           priority

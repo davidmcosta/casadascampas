@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Casa das Campas Team" }],
   creator: "Casa das Campas",
   icons: {
-    icon: "/images/logoweb.png",
+    icon: "/images/log/logoweb.webp",
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
