@@ -68,6 +68,7 @@ export default function Header () {
       style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: "1.5", letterSpacing: "0.01em", WebkitFontSmoothing: "antialiased" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-blackDark shadow-xl border-b border-white/10' : 'bg-blackDark shadow-lg'}`}
     >
+
       <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10">
         <div className="flex items-center justify-between h-14 sm:h-16 lg:h-18">
           <div className="flex-shrink-0">

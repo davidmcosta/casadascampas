@@ -7,7 +7,7 @@ const about = {
   metaDescription:
     "Learn more about our commitment to offering dignified funeral products and compassionate service to families in their time of need.",
   ogImage: "/images/Blog-Campa-Casa-das-Campas.jpg",
-  heroImage: "/images/imge27.jpg",
+  heroImage: "/images/blog/img27.jpg",
   heroImageAlt: "About our funeral products company",
 
   companyHistory: `Founded in 1985, our company has served families in their most difficult moments with dignity, respect, and compassion. What began as a small family business has become a trusted provider of premium funeral products and services.

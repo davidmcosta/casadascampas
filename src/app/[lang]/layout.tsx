@@ -36,9 +36,26 @@ export const metadata: Metadata = {
   authors: [{ name: "Casa das Campas Team" }],
   creator: "Casa das Campas",
   icons: {
-    icon: "/images/log/logoweb.webp",
+    icon: "/images/logo/logoweb.webp",
     shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    apple: [
+      {
+        url: "/images/appleTouch/apple-touch-icon-iphone-60x60.png",
+        sizes: "60x60",
+      },
+      {
+        url: "/images/appleTouch/apple-touch-icon-ipad-76x76.png",
+        sizes: "76x76",
+      },
+      {
+        url: "/images/appleTouch/apple-touch-icon-iphone-retina-120x120.png",
+        sizes: "120x120",
+      },
+      {
+        url: "/images/appleTouch/apple-touch-icon-ipad-retina-152x152.png",
+        sizes: "152x152",
+      },
+    ],
   },
 };
 

@@ -7,7 +7,7 @@ const about = {
   metaDescription:
     "Saiba mais sobre o nosso compromisso em oferecer produtos funerários dignos e um serviço compassivo às famílias em seu momento de necessidade.",
   ogImage: "/images/Blog-Campa-Casa-das-Campas.jpg",
-  heroImage: "/images/imge27.jpg",
+  heroImage: "/images/blog/img27.jpg",
   heroImageAlt: "Sobre nossa empresa de produtos funerários",
 
   companyHistory: `Fundada em 1985, a nossa empresa tem servido famílias nos seus momentos mais difíceis com dignidade, respeito e compaixão. O que começou como um pequeno negócio familiar tornou-se um fornecedor de confiança de produtos e serviços funerários premium.

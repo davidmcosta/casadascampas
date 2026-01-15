@@ -116,7 +116,7 @@ export default function AboutPage() {
           <div className="relative order-1 lg:order-2">
             <div className="relative h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[450px] 2xl:h-[500px] rounded-lg lg:rounded-l-2xl lg:rounded-r-none overflow-hidden shadow-2xl group">
               <Image 
-                src="/images/img12.jpg"
+                src="/images/blog/img12.jpg"
                 alt={t?.imageAlt || "About image"} 
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"

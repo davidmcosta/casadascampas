@@ -4,8 +4,8 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "standalone",
   eslint: {
-    ignoreDuringBuilds: true, 
-  },
+  ignoreDuringBuilds: process.env.NODE_ENV === "production",
+},
  images: {
   remotePatterns: [
     {
@@ -14,10 +14,13 @@ const nextConfig: NextConfig = {
     },
   ],
 },
- allowedDevOrigins: [
-    'http://192.168.1.217:3000', // O teu IP local + porta
-    'http://localhost:3000',      // Opcional: localhost
-  ],
+ allowedDevOrigins:
+  process.env.NODE_ENV === "development"
+    ? [
+        'http://192.168.1.217:3000',
+        'http://localhost:3000',
+      ]
+    : undefined,
 
 };
 
