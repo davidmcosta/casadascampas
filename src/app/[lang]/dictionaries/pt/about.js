@@ -1,7 +1,7 @@
 const about = {
   title: "Sobre Nós",
   title1 :"A nossa Herança",
-  title2: "A nossa Missão",
+  
   story : "Nossa História e Compromisso",
   metaTitle: "Sobre Nós - Produtos e Serviços Funerários Premium",
   metaDescription:
@@ -15,10 +15,10 @@ const about = {
 Ao longo das décadas, construímos relações duradouras com agências funerárias, famílias e comunidades em toda a região. O nosso compromisso com a qualidade artesanal e o serviço personalizado manteve-se inalterado, mesmo com a expansão e a adoção de novas tecnologias.
 
 Hoje, continuamos a honrar os nossos princípios fundadores, adaptando-nos às necessidades em constante evolução das famílias modernas. Cada produto que criamos e cada serviço que oferecemos refletem a nossa profunda compreensão do caráter sagrado da lembrança e celebração da vida.`,
-
+  title2: "A nossa Missão",
   mission:
     "Fornecer às famílias produtos funerários personalizados e dignos, juntamente com um serviço compassivo que honre a memória dos seus entes queridos e as apoie no seu processo de luto e cura.",
-
+  title3:"Entregamos",
   highlights: [
     {
       title: "Qualidade Premium",
@@ -57,7 +57,7 @@ Hoje, continuamos a honrar os nossos princípios fundadores, adaptando-nos às n
       icon: "🏘️",
     },
   ],
-
+  title4:"Conheça a nossa equipa",
   teamMembers: [
     {
     name: "Jorge Franco",

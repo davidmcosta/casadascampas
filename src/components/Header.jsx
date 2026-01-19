@@ -8,19 +8,17 @@ import { useStore } from "../components/lib/store"
 import { LanguageSwitcher } from "./LanguageSwitcher"
 import Logo from "./Logo"
 
-export default function Header () {
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const [mounted, setMounted] = useState(false) // ⚡ Hydration fix
+  const [mounted, setMounted] = useState(false)
   const pathname = usePathname()
   const { toggleCart, getTotalItems } = useStore()
   const totalItems = getTotalItems()
-  const lang = pathname.split("/")[1]
+  const lang = pathname.split("/")[1] || "pt"
 
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
+  useEffect(() => setMounted(true), [])
+  
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)
     setScrolled(typeof window !== 'undefined' ? window.scrollY > 20 : false)
@@ -31,8 +29,8 @@ export default function Header () {
   useEffect(() => setIsOpen(false), [pathname])
 
   const labels = {
-    pt: { home: "Início", about: "Sobre Nós", products: "Produtos", gallery: "Galeria", blog: "Blogue", contact: "Contacto" },
-    en: { home: "Home", about: "About Us", products: "Products", gallery: "Gallery", blog: "Blog", contact: "Contact" }
+    pt: { home: "Início", about: "Sobre Nós", products: "Produtos", blog: "Blogue", contact: "Contacto" },
+    en: { home: "Home", about: "About Us", products: "Products", blog: "Blog", contact: "Contact" }
   }
   const t = labels[lang] || labels['pt']
 
@@ -40,7 +38,6 @@ export default function Header () {
     { href: `/${lang}`, label: t.home },
     { href: `/${lang}/about`, label: t.about },
     { href: `/${lang}/products`, label: t.products },
-    { href: `/${lang}/gallery`, label: t.gallery },
     { href: `/${lang}/blog`, label: t.blog },
     { href: `/${lang}/contact`, label: t.contact }
   ]
@@ -57,20 +54,14 @@ export default function Header () {
     </svg>
   )
 
-  const PhoneIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-    </svg>
-  )
-
   return (
     <header
-      style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: "1.5", letterSpacing: "0.01em", WebkitFontSmoothing: "antialiased" }}
+      style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-blackDark shadow-xl border-b border-white/10' : 'bg-blackDark shadow-lg'}`}
     >
-
       <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10">
         <div className="flex items-center justify-between h-14 sm:h-16 lg:h-18">
+          {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center" aria-label="Home">
               <div className="transform transition-transform duration-200 hover:scale-105">
@@ -79,11 +70,17 @@ export default function Header () {
             </Link>
           </div>
 
+          {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             {navLinks.map(link => (
-              <Link key={link.href} href={link.href} className={`text-sm font-medium tracking-wide transition-all duration-300 pb-1 border-b-2 px-2 py-1 hover:scale-105 ${pathname === link.href ? "text-amberVar border-amberVar" : "text-white hover:text-amberVar border-transparent hover:border-amberVar"}`}>{link.label}</Link>
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`text-sm font-medium tracking-wide transition-all duration-300 pb-1 px-2 py-1 hover:scale-105 border-b-2 ${pathname === link.href ? "text-amberVar border-amberVar" : "text-white border-transparent hover:text-amberVar hover:border-amberVar"}`}
+              >
+                {link.label}
+              </Link>
             ))}
-
             <div className="flex items-center space-x-2 ml-2 xl:ml-4">
               <button
                 onClick={toggleCart}
@@ -97,11 +94,60 @@ export default function Header () {
                   </span>
                 )}
               </button>
-              <LanguageSwitcher className="hidden lg:flex" currentLocale={lang}/>
+              <LanguageSwitcher className="hidden lg:flex" currentLocale={lang} />
             </div>
           </nav>
+
+          {/* Mobile Menu Button */}
+          <div className="flex lg:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-white p-2 rounded-lg"
+              aria-label="Toggle menu"
+            >
+              {isOpen ? <CloseIcon /> : <MenuIcon />}
+            </button>
+          </div>
         </div>
       </div>
+
+      {/* Mobile Menu Panel */}
+      {isOpen && (
+<nav
+  className={`
+    lg:hidden absolute top-full left-0 w-full z-40
+    flex flex-col items-center space-y-5
+    border-t border-white/10
+    bg-black/50 backdrop-blur-md text-white
+    transition-all duration-300 ease-out
+    ${isOpen 
+      ? "opacity-100 translate-y-0 pointer-events-auto py-6" 
+      : "opacity-0 -translate-y-3 pointer-events-none py-0"
+    }
+  `}
+>
+  {navLinks.map(link => (
+    <Link
+      key={link.href}
+      href={link.href}
+      onClick={() => setIsOpen(false)}
+      className={`
+        text-lg font-medium tracking-wide transition-colors
+        ${pathname === link.href
+          ? "text-amberVar"
+          : "text-white hover:text-amberVar"
+        }
+      `}
+    >
+      {link.label}
+    </Link>
+  ))}
+
+  <LanguageSwitcher className="flex mt-2" currentLocale={lang} />
+</nav>
+
+
+)}
     </header>
   )
 }

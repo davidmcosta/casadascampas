@@ -137,14 +137,14 @@ const BlogDetailPost = () => {
 
 
   const post = {
-    excerpt: lang === "pt" ? translatedData?.excerpt : posts?.excerpt,
-    slug: lang === "pt" ? translatedData?.slug : posts?.slug?.current,
-    title: lang === "pt" ? translatedData?.title : posts?.title,
-    authorBio: lang === "pt" ? translatedData?.authorBio : posts?.authorBio,
+    excerpt: lang === "en" ? translatedData?.excerpt : posts?.excerpt,
+    slug: lang === "en" ? translatedData?.slug : posts?.slug?.current,
+    title: lang === "en" ? translatedData?.title : posts?.title,
+    authorBio: lang === "en" ? translatedData?.authorBio : posts?.authorBio,
     image: posts?.image,
-    authorName: lang === "pt" ? translatedData?.authorName : posts?.authorName,
-    categories: lang === "pt" ? translatedData?.categories : posts?.categories,
-    content: lang === "pt" ? translatedData?.content : textPlain,
+    authorName: lang === "en" ? translatedData?.authorName : posts?.authorName,
+    categories: lang === "en" ? translatedData?.categories : posts?.categories,
+    content: lang === "en" ? translatedData?.content : textPlain,
     _id: posts?._id,
     imageAlt: posts?.imageAlt,
     publishedAt: posts?.publishedAt,

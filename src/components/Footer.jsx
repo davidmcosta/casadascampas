@@ -134,11 +134,6 @@ const productSlugs = [
                 </Link>
               </li>
               <li>
-                <Link href={`/${lang}/gallery`} className="text-gray-300 hover:text-amberhover">
-                  {t.quickLinks?.gallery}
-                </Link>
-              </li>
-              <li>
                 <Link href={`/${lang}/blog`} className="text-gray-300 hover:text-amberhover">
                   {t.quickLinks?.blog}
                 </Link>

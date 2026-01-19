@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { usePathname, notFound } from 'next/navigation';
 import { getDictionary } from '../dictionaries';
+import StyledTitle from "../../../components/StyledTitle"
 
 export default function AboutPage() {
   const pathname = usePathname();
@@ -68,8 +69,9 @@ export default function AboutPage() {
 
   const translatedTitle = t.title2;
   const words = translatedTitle.split(' ');
-  const lastWord = words.pop(); // "Missão"
   const firstWords = words.join(' '); // "A nossa"
+  const lastWord = words.pop(); // "Missão"
+  
 
   return (
     <>
@@ -117,7 +119,7 @@ export default function AboutPage() {
         <section className="py-12 md:py-16 lg:py-20 bg-white">
           <div className="container mx-auto max-w-4xl px-4 sm:px-6">
             <h2 className="text-2xl md:text-3xl font-bold text-blackVar text-center mb-6">
-              <span className="text-amberVar">{title1}</span>
+              <StyledTitle text={t.title1} />
             </h2>
             <div className="w-16 h-1 bg-amberVar mx-auto mb-8" />
             <div className="prose prose-lg max-w-none text-gray-700">
@@ -133,10 +135,7 @@ export default function AboutPage() {
 
         <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
           <div className="container mx-auto max-w-4xl px-4 sm:px-6 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-blackVar mb-4">
-    {firstWords}{' '}
-    <span className="text-amberVar">{lastWord}</span>
-  </h2>
+            <StyledTitle text={t.title2} />
             <div className="w-16 h-1 bg-amberVar mx-auto mb-8" />
             <blockquote className="max-w-2xl mx-auto bg-white p-6 md:p-8 shadow-md text-lg text-gray-800 rounded-lg">
               <span className="text-4xl leading-3 text-amberVar">"</span>
@@ -151,9 +150,7 @@ export default function AboutPage() {
           <section className="py-12 md:py-16 lg:py-20 bg-white">
             <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
               <div className="text-center mb-12">
-                <h2 className="text-2xl md:text-3xl font-bold text-blackVar">
-                  {whyChooseUsTitle || 'Entregamos'}
-                </h2>
+                <StyledTitle text={t.title3} />
                 <div className="w-16 h-1 bg-amberVar mx-auto mt-4" />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -181,9 +178,7 @@ export default function AboutPage() {
           <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
             <div className="container mx-auto max-w-6xl px-4 sm:px-6">
               <div className="text-center mb-12">
-                <h2 className="text-2xl md:text-3xl font-bold text-blackVar">
-                  {teamTitle || 'Conheça a nossa equipa'}
-                </h2>
+                <StyledTitle text={t.title4} />
                 <div className="w-16 h-1 bg-amberVar mx-auto mt-4" />
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

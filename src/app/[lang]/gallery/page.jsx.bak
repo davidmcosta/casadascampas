@@ -12,7 +12,7 @@ import {
   Heart,
   Star,
 } from "lucide-react";
-import { getSanityGalleryItems } from "../../../components/lib/galleryData";
+import { getSanityGalleryItems } from "../../../components/lib/galleryData.js.bak";
 import { usePathname } from "next/navigation";
 import { getDictionary } from "../dictionaries";
 import translateText from "../../../components/helper/translateText.js";

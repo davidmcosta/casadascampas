@@ -7,7 +7,6 @@ const footer = {
     home: "lar",
     about: "Sobre Nós",
     products: "Produtos",
-    gallery: "Galeria",
     blog: "Blogue",
     contact: "Contacto"
   },

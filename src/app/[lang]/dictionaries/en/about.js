@@ -1,7 +1,7 @@
 const about = {
   title: "About Us",
   title1: "Our Heritage",
-  title2: "Our Mission",
+  
   metaTitle: "About Us - Premium Funeral Products & Services",
   story: "Our Story & Commitment",
   metaDescription:
@@ -15,10 +15,10 @@ const about = {
 Over the decades, we have built lasting relationships with funeral homes, families, and communities throughout the region. Our commitment to craftsmanship and personalized service has remained unchanged, even as we expand and adopt new technologies.
 
 Today, we continue to honor our founding principles while adapting to meet the ever-evolving needs of modern families. Every product we create and every service we offer reflects our deep understanding of the sacred nature of remembrance and life celebration.`,
-
+  title2: "Our Mission",
   mission:
     "To provide families with personalized and dignified funeral products, along with compassionate service that honors the memory of their loved ones and supports them through their journey of grief and healing.",
-
+  title3: "We deliver",
   highlights: [
     {
       title: "Premium Quality",
@@ -57,7 +57,7 @@ Today, we continue to honor our founding principles while adapting to meet the e
       icon: "🏘️",
     },
   ],
-
+  title4:"Meet our team",
   teamMembers: [
   {
     name: "Jorge Franco",
