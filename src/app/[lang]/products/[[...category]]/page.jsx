@@ -40,7 +40,6 @@ export default async function ProductsPage({ params }) {
       <Suspense fallback={<ProductGridSkeleton />}>
         <ProductGrid params={resolvedParams} />
       </Suspense>
-      <CartSidebar />
     </main>
   )
 }

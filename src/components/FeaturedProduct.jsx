@@ -5,6 +5,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { getDictionary } from "@/app/[lang]/dictionaries";
+import StyledTitle from "../components/StyledTitle"
 
 
 
@@ -56,18 +57,9 @@ function FeaturedProduct() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h2
-            className="text-4xl font-bold text-gray-900 mb-4"
-            style={{
-              fontFamily: "sans-serif",
-              letterSpacing: "-0.015em",
-              wordSpacing: "0.02em",
-            }}
-          >
-            {sectionHeader.title || "Featured Products"}
-          </h2>
+          <StyledTitle text={sectionHeader.title}/>
           <p
-            className="text-lg text-gray-600 max-w-2xl mx-auto"
+            className="text-lg mt-4 text-gray-600 max-w-2xl mx-auto"
             style={{
               lineHeight: "1.6",
               letterSpacing: "0.01em",

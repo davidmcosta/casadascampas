@@ -7,6 +7,7 @@ import { Roboto } from 'next/font/google';
 import { usePathname } from 'next/navigation';
 import BlogPageSkeleton from "./BlogPageSkeleton";
 import { getDictionary } from '@/app/[lang]/dictionaries';
+import StyledTitle from './StyledTitle';
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -271,12 +272,13 @@ const BlogPage = () => {
         <section className="bg-white py-8 md:py-12">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mb-8">
-              <h2 className={`text-2xl font-bold text-blackDark mb-2`}>
-                {t?.blog?.articles?.title || "All Articles"}
-              </h2>
-              <p className={`text-blackVar text-sm md:text-base`}>
+              <div className={`text-center`}>
+                <StyledTitle text={t?.blog?.articles?.title || "All Articles"} />
+                  <p className={`text-blackVar text-sm md:text-base`}>
                 {t?.blog?.articles?.description || "Browse our complete collection of articles"}
               </p>
+              </div>
+            
             </div>
 
             {isLoading ? (
@@ -429,10 +431,8 @@ const BlogPage = () => {
         {selectedCategory === 'all' && !searchTerm && (
           <section className="bg-gray-50 py-8 md:py-12">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 className={`text-2xl font-bold text-blackDark mb-6 text-center`}>
-                {t?.blog?.featured?.title || "Featured Articles"}
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <StyledTitle text={t?.blog?.featured?.title || "Featured Articles"} />
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
                 {blogPosts.filter(post => post.featured).slice(0, 3).map((post) => (
                   <article key={post.id} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
                     <div className="relative h-48 overflow-hidden">

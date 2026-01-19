@@ -75,7 +75,7 @@ const productSlugs = [
   if (!t) return null;
 
   return (
-    <footer className="bg-blackDark text-white">
+    <footer className="bg-blackDark text-white border-t border-amberhover">
       <div className="px-6 py-8 md:py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Logo and Description */}

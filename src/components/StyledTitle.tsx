@@ -20,7 +20,7 @@ const StyledTitle: React.FC<StyledTitleProps> = ({ text }) => {
   const firstWords = words.join(" ");
 
   return (
-    <h1 className="text-4xl font-bold">
+    <h1 className="text-2xl font-bold text-blackDark mb-4 text-center">
       <span className="text-black">{firstWords} </span>
       <span className="text-amberVar">{lastWord}</span>
     </h1>

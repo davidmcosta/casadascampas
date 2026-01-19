@@ -6,7 +6,7 @@ import { ShoppingCart, Eye, Share, Copy, Check } from 'lucide-react';
 import { useStore } from "./lib/store";
 import Toast from "./Toast";
 
-export default function ProductCard({ product, productSlug, lang = "pt", onImageClick }) { // Removed ImageModal, added onImageClick prop
+export default function ProductCard({ product, productSlug, lang = "pt", onImageClick }) {
   const [showToast, setShowToast] = useState(false);
   const [selectedVariantIndex, setSelectedVariantIndex] = useState(0);
   const [copied, setCopied] = useState(false);
